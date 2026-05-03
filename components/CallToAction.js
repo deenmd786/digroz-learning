@@ -6,7 +6,7 @@ export default function CallToAction() {
       <Link href="/get-started" passHref>
         <button 
           className="
-            bg-gradient-to-r from-[#6F8AE8] to-[#C88BE6] 
+            bg-linear-to-r from-[#6F8AE8] to-[#C88BE6] 
             text-white font-bold text-lg md:text-xl 
             py-4 px-10 md:px-14 
             rounded-full 

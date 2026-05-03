@@ -5,88 +5,84 @@ const examsData = [
     id: 1,
     title: 'UPSC',
     image: '/assets/upsc.png',
-    // Added inset shadow for inner glow
     glowStyle: 'border-[#4A6BFF] shadow-[0_0_20px_rgba(74,107,255,0.4),inset_0_0_20px_rgba(74,107,255,0.4)]', 
   },
   {
     id: 2,
     title: 'SSC',
     image: '/assets/ssc.png',
-    // Added inset shadow for inner glow
     glowStyle: 'border-[#B25AFF] shadow-[0_0_20px_rgba(178,90,255,0.4),inset_0_0_20px_rgba(178,90,255,0.4)]', 
   },
   {
     id: 3,
     title: 'Banking',
     image: '/assets/banking.png',
-    // Added inset shadow for inner glow
     glowStyle: 'border-[#4A6BFF] shadow-[0_0_20px_rgba(74,107,255,0.4),inset_0_0_20px_rgba(74,107,255,0.4)]', 
   },
   {
     id: 4,
     title: 'Railway',
     image: '/assets/railway.png',
-    // Added inset shadow for inner glow
     glowStyle: 'border-[#B25AFF] shadow-[0_0_20px_rgba(178,90,255,0.4),inset_0_0_20px_rgba(178,90,255,0.4)]', 
   },
 ];
 
 export default function FutureExpansion() {
   return (
-    <section className="w-full bg-[#F8FAFF] py-16 px-4 md:px-12 lg:px-24">
-      <div className="max-w-7xl mx-auto bg-[#141C3A] rounded-[2rem] py-16 px-6 md:px-12 text-center shadow-xl">
+    <section className="w-full bg-[#F8FAFF] py-12 sm:py-16 lg:py-20 px-4 sm:px-8 lg:px-16 xl:px-24 overflow-hidden">
+      <div className="max-w-7xl mx-auto bg-[#141C3A] rounded-4xl py-12 sm:py-16 lg:py-20 px-6 sm:px-10 lg:px-16 text-center shadow-2xl relative">
         
         {/* Headings */}
-        <h3 className="text-gray-300 text-lg md:text-xl font-medium mb-2 tracking-wide">
+        <h3 className="text-[#8B98C6] text-sm sm:text-base lg:text-lg font-semibold mb-2 sm:mb-3 uppercase tracking-wider">
           Future Expansion
         </h3>
-        <h2 className="text-3xl md:text-4xl lg:text-[40px] font-bold text-white mb-16">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-12 sm:mb-16 lg:mb-20">
           Coming Soon: All Government Exams
         </h2>
 
         {/* Timeline/Cards Container */}
         <div className="relative max-w-5xl mx-auto">
           
-          {/* Background Connecting Line (Visible only on medium screens and up) */}
-          <div className="hidden md:block absolute top-1/2 left-[10%] right-[10%] h-[2px] bg-white/20 -translate-y-1/2 z-0"></div>
+          {/* Background Connecting Line (Visible only on Desktop/Large screens) */}
+          <div className="hidden lg:block absolute top-1/2 left-[5%] right-[5%] h-0.5 bg-white/10 -translate-y-1/2 z-0"></div>
 
-          {/* Cards Grid/Flex */}
-          <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12 md:gap-4">
+          {/* Cards Container (Stack on mobile, 2x2 Grid on tablet, Flex Row on desktop) */}
+          <div className="relative z-10 flex flex-col sm:grid sm:grid-cols-2 lg:flex lg:flex-row items-center justify-between gap-10 sm:gap-12 lg:gap-4 xl:gap-8">
             {examsData.map((exam, index) => (
-              <div key={exam.id} className="relative flex items-center justify-center flex-1">
+              <div key={exam.id} className="relative flex items-center justify-center w-full lg:w-auto">
                 
                 {/* The Card */}
                 <div 
-                  className={`relative bg-[#1E2749] w-36 h-40 md:w-40 md:h-44 rounded-2xl border flex flex-col items-center justify-center transition-transform hover:-translate-y-2 duration-300 ${exam.glowStyle}`}
+                  className={`relative bg-[#1E2749] w-48 h-48 sm:w-52 sm:h-52 lg:w-40 lg:h-44 xl:w-48 xl:h-52 rounded-[1.5rem] border border-white/10 flex flex-col items-center justify-center transition-all hover:-translate-y-2 hover:scale-105 duration-300 ${exam.glowStyle}`}
                 >
                   {/* Upcoming Badge */}
-                  <span className="absolute -top-3.5 -right-6 bg-[#FFC582] text-[#141C3A] text-xs font-bold px-3 py-1 rounded-full border-4 border-[#141C3A]">
+                  <span className="absolute -top-4 -right-2 sm:-right-4 bg-[#FFC582] text-[#141C3A] text-xs sm:text-sm font-bold px-3 sm:px-4 py-1 sm:py-1.5 rounded-full border-[3px] border-[#141C3A] shadow-lg whitespace-nowrap z-10">
                     Upcoming
                   </span>
 
                   {/* Icon/Logo */}
-                  <div className="relative w-12 h-12 md:w-14 md:h-14 mb-4">
+                  <div className="relative w-14 h-14 sm:w-16 sm:h-16 lg:w-14 lg:h-14 xl:w-16 xl:h-16 mb-4 sm:mb-5">
                     <Image
                       src={exam.image}
                       alt={`${exam.title} Exam Logo`}
-                      width={700}
-                      height={700}
-                      className="object-cover w-full h-full" 
-                      sizes="60px"
+                      width={100}
+                      height={100}
+                      className="object-contain w-full h-full drop-shadow-md" 
+                      sizes="(max-width: 768px) 64px, 80px"
                     />
                   </div>
 
                   {/* Title */}
-                  <span className="text-white font-bold text-lg md:text-xl tracking-wide">
+                  <span className="text-white font-bold text-lg sm:text-xl xl:text-2xl tracking-wide">
                     {exam.title}
                   </span>
                 </div>
 
-                {/* Connecting Arrow between cards (Hidden on mobile) */}
+                {/* Connecting Arrow between cards (Hidden on mobile & tablet) */}
                 {index < examsData.length - 1 && (
-                  <div className="hidden md:flex absolute -right-6 lg:-right-8 top-1/2 -translate-y-1/2 w-6 h-6 items-center justify-center bg-[#141C3A] z-20">
+                  <div className="hidden lg:flex absolute -right-6 xl:-right-8 top-1/2 -translate-y-1/2 w-8 h-8 items-center justify-center bg-[#141C3A] border-2 border-white/10 rounded-full z-20 shadow-md">
                     <svg 
-                      className="w-4 h-4 text-white/50" 
+                      className="w-4 h-4 text-white/60" 
                       fill="none" 
                       stroke="currentColor" 
                       viewBox="0 0 24 24"

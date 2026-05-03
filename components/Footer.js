@@ -70,7 +70,7 @@ export default function Footer() {
         {/* Bottom Section: Copyright Text */}
         <div className="text-center">
           <p className="text-gray-400 text-sm">
-            © 2026 Digroz Learning. Digroz Learning is a product of Digroz.
+            © 2026 Digroz Learning. Digroz Learning is a registered division of Digroz.
           </p>
         </div>
 
