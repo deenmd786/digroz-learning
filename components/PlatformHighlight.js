@@ -2,11 +2,11 @@ import Image from 'next/image';
 
 export default function PlatformHighlight() {
   return (
-    <section className="w-full bg-[#F8FAFF] py-16 px-6 md:px-12 flex flex-col items-center">
+    <section className="w-full bg-[#F8FAFF] px-6 md:px-12 flex flex-col items-center">
       <div className="max-w-7xl mx-auto w-full flex flex-col items-center">
         
         {/* Section Title */}
-        <h2 className="text-3xl md:text-4xl lg:text-[40px] font-bold text-[#141C3A] mb-10 md:mb-16 text-center tracking-tight">
+        <h2 className="text-3xl md:text-4xl lg:text-[40px] font-bold text-[#141C3A] mb-10 text-center tracking-tight">
           Platform Highlight
         </h2>
 
