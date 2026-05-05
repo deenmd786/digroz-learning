@@ -1,8 +1,6 @@
+import MetaPixel from "@/components/MetaPixel";
 import "./globals.css";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
 import Script from "next/script";
-import MetaPixel from "./components/MetaPixel";
 import { Suspense } from "react";
 
 // -------------------------------
@@ -113,12 +111,9 @@ export default function RootLayout({ children }) {
         <Suspense fallback={null}>
           <MetaPixel />
         </Suspense>
-
-        <Header />
         <main>
           {children}
         </main>
-        <Footer />
       </body>
     </html>
   );
