@@ -2,6 +2,9 @@ import MetaPixel from "@/components/MetaPixel";
 import "./globals.css";
 import Script from "next/script";
 import { Suspense } from "react";
+import Footer from "@/components/Footer";
+import Navbar from '@/components/Navbar';
+
 
 // -------------------------------
 // ✅ Mobile Viewport
@@ -111,9 +114,12 @@ export default function RootLayout({ children }) {
         <Suspense fallback={null}>
           <MetaPixel />
         </Suspense>
+        <Navbar />
         <main>
           {children}
         </main>
+                <Footer />
+
       </body>
     </html>
   );

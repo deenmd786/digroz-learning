@@ -39,7 +39,7 @@ export default function Overview() {
             Overview
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto text-base sm:text-lg lg:text-xl leading-relaxed mb-10 sm:mb-14">
-            A complete platform to help you prepare effectively for NISM exams with structured content, smart quizzes, and realistic mock tests.
+            A complete platform to help you prepare effectively for NISM and All competitive exams with structured content, smart quizzes, and realistic mock tests.
           </p>
         </div>
 

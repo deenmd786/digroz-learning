@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Nav() {
   return (
-    <header className="w-full bg-white px-6 py-5 md:px-12 lg:px-24 flex items-center justify-between rounded-t-[2rem] shadow-sm">
+    <header className="w-full bg-white px-6 py-5 md:px-12 lg:px-24 flex items-center justify-between rounded-t-4xl shadow-sm">
       
       {/* Logo Section */}
       <Link href="/" className="flex items-center">
@@ -40,6 +40,12 @@ export default function Nav() {
           className="text-gray-900 text-lg font-medium hover:text-[#8295E5] transition-colors duration-200"
         >
           Contact
+        </Link>
+        <Link 
+          href="/privacy" 
+          className="text-gray-900 text-lg font-medium hover:text-[#8295E5] transition-colors duration-200"
+        >
+          Privacy
         </Link>
       </nav>
 

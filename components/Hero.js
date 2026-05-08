@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <section className="relative w-full bg-linear-to-r from-[#6f86e8] to-[#9db1fc] pt-12  sm:pt-16  md:pt-20  px-4 sm:px-8 md:px-12 lg:px-24 overflow-hidden rounded-b-[2rem]">
+    <section className="relative w-full bg-linear-to-r from-[#6f86e8] to-[#9db1fc] pt-12   px-4 sm:px-8 md:px-12 lg:px-24 overflow-hidden rounded-b-[2rem]">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 md:gap-12 lg:gap-16">
         
         {/* Left Content Section */}
@@ -12,7 +12,7 @@ export default function Hero() {
             Digroz Learning
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-8 max-w-105 leading-snug font-medium">
-            Master NISM Exams with Smart Learning
+            Master All the Exams with Smart Learning
           </p>
           <Link href="/get-started" passHref>
             <button className="bg-white text-gray-900 font-bold text-base sm:text-lg py-3.5 px-8 rounded-[1rem] shadow-[0_8px_20px_-4px_rgba(0,0,0,0.15)] hover:shadow-[0_12px_24px_-4px_rgba(0,0,0,0.2)] hover:-translate-y-0.5 transition-all duration-200">

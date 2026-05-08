@@ -32,6 +32,9 @@ export default function Footer() {
             <Link href="/contact" className="text-gray-300 hover:text-white transition-colors duration-200">
               Contact
             </Link>
+            <Link href="/privacy" className="text-gray-300 hover:text-white transition-colors duration-200">
+              Privacy
+            </Link>
           </nav>
 
           {/* Right Column: Social Icons */}
