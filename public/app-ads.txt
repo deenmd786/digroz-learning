@@ -1,0 +1,13 @@
+google.com, pub-3215442685919458, DIRECT, f08c47fec0942fa0
+    ```
+    Save the file and name it exactly **`app-ads.txt`**.
+  
+  
+    Upload the `app-ads.txt` file to the root folder of the domain associated with Digroz Learning. 
+    * The **root** is the top-level folder of your website (often named `public_html`, `www`, or `htdocs` depending on your host).
+    * To verify you did this right, type your website URL into a browser followed by `/app-ads.txt` (e.g., `[https://yourdomain.com/app-ads.txt](https://yourdomain.com/app-ads.txt)`). If the file downloads or displays your text snippet on the screen, it's in the right place.
+  
+  
+    Google AdMob finds your `app-ads.txt` file by looking at the developer website listed on your app's store page. 
+    * **For Google Play:** Go to the Google Play Console, select Digroz Learning, navigate to **Store presence > Store listing**, and ensure your website URL is entered in the contact details.
+    * **For Apple App Store (if applicable):** Add your website to the Marketing URL field in App Store Connect.
